@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 export default function Menu() {
   return (
     <div>
       {" "}
       <div>
-        <nav className="navbar navbar-expand-md bg-dark text-uppercase">
-          <div className="container-fluid">
-            <Link to="/" className="navbar-brand text-white">
+        <nav className="navbar navbar-expand-lg text-uppercase menu fs-5 ">
+          <div className="container-fluid animate__animated animate__fadeInLeft ">
+            <Link to="/" className="navbar-brand text-white fs-2 ">
               DashBoard
             </Link>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -19,7 +19,7 @@ export default function Menu() {
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
               aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
             <div className="collapse navbar-collapse " id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">

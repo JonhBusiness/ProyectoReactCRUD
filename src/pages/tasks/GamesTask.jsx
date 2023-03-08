@@ -122,11 +122,13 @@ export default function GamesTask({ del }) {
   }
 
   return (
-    <div>
-      <h1>{id === undefined ? "Add" : del !== true ? "Edit" : "Delete"}</h1>
+    <div className="m-5">
+      <h1 className="text-center text-uppercase">
+        {id === undefined ? "Add" : del !== true ? "Edit" : "Delete"}
+      </h1>
 
       {id !== undefined ? (
-        <div className="form-group">
+        <div className="form-group text-uppercase fw-bolder">
           <label className="form-label">Games ID</label>
           <input className="form-control" type="text" value={id} readOnly disabled></input>
         </div>
@@ -134,8 +136,8 @@ export default function GamesTask({ del }) {
         ""
       )}
 
-      <form id="formulario" className="needs-validation" noValidate>
-        <div className="form-group mt-2">
+      <form id="formulario" className="needs-validation text-uppercase fw-bolder" noValidate>
+        <div className="form-group mt-1 ">
           <label className="form-label">Titulo:</label>
           <input
             className="form-control"

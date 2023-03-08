@@ -1,0 +1,16 @@
+@use "stylesAnimate";
+.menu {
+  @include stylesAnimate.Nav();
+}
+.navbar-nav {
+  @include stylesAnimate.LinkEfect();
+}
+.btn-delete {
+  @include stylesAnimate.Delete();
+}
+.btn-edit {
+  @include stylesAnimate.Edit();
+}
+.btn-add {
+  @include stylesAnimate.Add();
+}

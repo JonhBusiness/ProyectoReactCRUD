@@ -14,7 +14,7 @@ export default function Games() {
   return (
     <div>
       <Menu />
-      <h1>Games</h1>
+      <h1 className="text-uppercase d-flex justify-content-center animate__animated animate__fadeInRight">Games</h1>
       {games === undefined ? (
         <div className="spinner-border text-primary" role="status">
           <span>Loading...</span>

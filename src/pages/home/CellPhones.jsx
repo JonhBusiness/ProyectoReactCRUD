@@ -14,7 +14,9 @@ export default function CellPhones() {
   return (
     <div>
       <Menu />
-      <h1>Cellphones</h1>
+      <h1 className="text-uppercase d-flex justify-content-center animate__animated animate__fadeInRight">
+        Cellphones
+      </h1>
       <Table
         filas={cellphones}
         controlador="zonecellphones"

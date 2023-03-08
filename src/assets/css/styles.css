@@ -1,0 +1,199 @@
+.menu {
+  font-weight: bold;
+  background-image: url("../img/Animated Shape (1).svg");
+}
+
+.navbar-nav a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(241, 237, 237);
+  padding: 0 20px;
+  cursor: pointer;
+}
+.navbar-nav a:hover {
+  color: #6f20d6;
+  transform: scale(0.9);
+}
+.navbar-nav a:before,
+.navbar-nav a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background: rgb(236, 231, 231);
+  transition: 0.5s;
+}
+.navbar-nav a:after {
+  left: 0;
+  bottom: -10px;
+}
+.navbar-nav a:before {
+  right: 0;
+  top: -10px;
+}
+.navbar-nav a:hover:after,
+.navbar-nav a:hover:before {
+  width: 100%;
+  background: #7c7cc9;
+}
+
+.btn-delete {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #d51313;
+}
+.btn-delete,
+.btn-delete span {
+  transition: 200ms;
+}
+.btn-delete .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+.btn-delete .icon {
+  position: absolute;
+  border-left: 1px solid #b50909;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-delete .icon svg {
+  width: 15px;
+  fill: #eee;
+}
+.btn-delete:hover {
+  background: #ff6403;
+}
+.btn-delete:hover .text {
+  color: red;
+}
+.btn-delete:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(30px);
+}
+.btn-delete:focus {
+  outline: none;
+}
+.btn-delete:active .icon svg {
+  transform: scale(0.8);
+}
+
+.btn-edit {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(6, 156, 243);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #1781c7;
+}
+.btn-edit,
+.btn-edit span {
+  transition: 200ms;
+}
+.btn-edit .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+.btn-edit .icon {
+  position: absolute;
+  border-left: 1px solid #1b4ec4;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-edit .icon svg {
+  width: 25px;
+  fill: #f9fafb;
+}
+.btn-edit:hover {
+  background: #09ebef;
+}
+.btn-edit:hover .text {
+  color: #1b4ec4;
+}
+.btn-edit:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(7px);
+}
+.btn-edit:focus {
+  outline: none;
+}
+.btn-edit:active .icon svg {
+  transform: scale(0.8);
+}
+
+.btn-add {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(43, 249, 6);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #17c732;
+}
+.btn-add,
+.btn-add span {
+  transition: 200ms;
+}
+.btn-add .text {
+  transform: translateX(35px);
+  color: white;
+  font-weight: bold;
+}
+.btn-add .icon {
+  position: absolute;
+  border-left: 1px solid #04fb21;
+  transform: translateX(110px);
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-add .icon svg {
+  width: 25px;
+  fill: #fbfbf7;
+}
+.btn-add:hover {
+  background: #6aff00;
+}
+.btn-add:hover .text {
+  color: #076915;
+}
+.btn-add:hover .icon {
+  width: 150px;
+  border-left: none;
+  transform: translateX(10px);
+}
+.btn-add:focus {
+  outline: none;
+}
+.btn-add:active .icon svg {
+  transform: scale(0.8);
+}
+
+/*# sourceMappingURL=styles.css.map */

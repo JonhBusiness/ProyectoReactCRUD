@@ -1,0 +1,234 @@
+@mixin Nav {
+  font-weight: bold;
+  background-image: url("../img/Animated\ Shape\ \(1\).svg");
+}
+@mixin LinkEfect {
+  a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(241, 237, 237);
+    // font-size: 18px;
+    // letter-spacing: 0.5px;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+      color: #6f20d6;
+
+      transform: scale(0.9);
+    }
+  }
+  a:before,
+  a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    background: rgb(236, 231, 231);
+    transition: 0.5s;
+  }
+  a:after {
+    left: 0;
+    bottom: -10px;
+  }
+  a:before {
+    right: 0;
+    top: -10px;
+  }
+  a:hover:after,
+  a:hover:before {
+    width: 100%;
+    background: #7c7cc9;
+  }
+}
+
+@mixin Delete {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: red;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #d51313;
+
+  &,
+  span {
+    transition: 200ms;
+  }
+
+  .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+  }
+
+  .icon {
+    position: absolute;
+    border-left: 1px solid #b50909;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 15px;
+      fill: #eee;
+    }
+  }
+
+  &:hover {
+    background: #ff6403;
+
+    .text {
+      color: red;
+    }
+
+    .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(30px);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    .icon svg {
+      transform: scale(0.8);
+    }
+  }
+}
+//edit
+@mixin Edit {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(6, 156, 243);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #1781c7;
+
+  &,
+  span {
+    transition: 200ms;
+  }
+
+  .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+  }
+
+  .icon {
+    position: absolute;
+    border-left: 1px solid #1b4ec4;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 25px;
+      fill: #f9fafb;
+    }
+  }
+
+  &:hover {
+    background: #09ebef;
+
+    .text {
+      color: #1b4ec4;
+    }
+
+    .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(7px);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    .icon svg {
+      transform: scale(0.8);
+    }
+  }
+}
+//Add
+@mixin Add {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background: rgb(43, 249, 6);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  background: #17c732;
+
+  &,
+  span {
+    transition: 200ms;
+  }
+
+  .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+  }
+
+  .icon {
+    position: absolute;
+    border-left: 1px solid #04fb21;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 25px;
+      fill: #fbfbf7;
+    }
+  }
+
+  &:hover {
+    background: #6aff00;
+
+    .text {
+      color: #076915;
+    }
+
+    .icon {
+      width: 150px;
+      border-left: none;
+      transform: translateX(10px);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    .icon svg {
+      transform: scale(0.8);
+    }
+  }
+}

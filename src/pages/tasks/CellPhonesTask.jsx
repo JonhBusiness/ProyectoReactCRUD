@@ -126,11 +126,13 @@ export default function CellPhonesTask({ del }) {
   }
 
   return (
-    <div>
-      <h1>{id === undefined ? "Add" : del !== true ? "Edit" : "Delete"}</h1>
+    <div className="m-5 ">
+      <h1 className="text-center text-uppercase">
+        {id === undefined ? "Add" : del !== true ? "Edit" : "Delete"}
+      </h1>
 
       {id !== undefined ? (
-        <div className="form-group">
+        <div className="form-group text-uppercase fw-bolder">
           <label className="form-label">CellPhones ID</label>
           <input className="form-control" type="text" value={id} readOnly disabled></input>
         </div>
@@ -138,8 +140,8 @@ export default function CellPhonesTask({ del }) {
         ""
       )}
 
-      <form id="formulario" className="needs-validation" noValidate>
-        <div className="form-group mt-2">
+      <form id="formulario" className="needs-validation text-uppercase fw-bolder" noValidate>
+        <div className="form-group mt-1">
           <label className="form-label">marca:</label>
           <input
             className="form-control"
@@ -225,7 +227,7 @@ export default function CellPhonesTask({ del }) {
             onClick={(e) => enviar(e)}>
             {id === undefined ? "Guardar" : del !== true ? "Editar" : "Eliminar"}
           </button>
-          <button className="btn btn-secondary" onClick={() => navigate("/zonecellphones")}>
+          <button className=" btn btn-secondary" onClick={() => navigate("/zonecellphones")}>
             Cancelar
           </button>
         </div>
